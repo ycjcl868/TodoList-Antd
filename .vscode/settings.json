@@ -1,4 +1,7 @@
 {
     "vsicons.presets.angular": false,
-    "emmet.syntaxProfiles": { "javascript": "jsx" }
+    "emmet.syntaxProfiles": { "javascript": "jsx" },
+     "less.compile": {
+         "compress":  false
+     }
 }

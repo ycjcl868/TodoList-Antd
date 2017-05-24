@@ -8,18 +8,21 @@ import AddTodo from '../components/AddTodo'
 import TodoList from '../components/TodoList'
 import Footer from '../components/Footer'
 
+import '../components/style.less'
+
 class App extends Component {
   render() {
-    // Injected by connect() call:
     const { dispatch, visibleTodos, visibilityFilter } = this.props
     return (
-      <div>
+      <div className='wrapper'>
+        <h1 className='title'>Ant-Design TodoList</h1>
         <AddTodo
           onAddClick={text =>
             dispatch(addTodo(text))
           } />
         <TodoList
           todos={visibleTodos}
+          filter={visibilityFilter}
           onTodoClick={index =>
             dispatch(completeTodo(index))
           } />

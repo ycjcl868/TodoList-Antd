@@ -1,34 +1,32 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
+import { Radio } from 'antd'
+const RadioButton = Radio.Button
+const RadioGroup = Radio.Group
+
 
 export default class Footer extends Component {
-  renderFilter(filter, name) {
-    if (filter === this.props.filter) {
-      return name
-    }
-
-    return (
-      <a href='#' onClick={e => {
-        e.preventDefault()
-        this.props.onFilterChange(filter)
-      }}>
-        {name}
-      </a>
-    )
+  constructor(props) {
+    super(props)
+    this.onChange = this.onChange.bind(this)
+  }
+  componentDidMount() {
+    this.props.onFilterChange('SHOW_ALL')
+  }
+  onChange(e) {
+    let name = e.target.value
+    this.props.onFilterChange(name)
   }
 
   render() {
     return (
-      <p>
-        Show:
-        {' '}
-        {this.renderFilter('SHOW_ALL', 'All')}
-        {', '}
-        {this.renderFilter('SHOW_COMPLETED', 'Completed')}
-        {', '}
-        {this.renderFilter('SHOW_ACTIVE', 'Active')}
-        .
-      </p>
+      <div className="filter">
+        <RadioGroup onChange={this.onChange} defaultValue="SHOW_ALL">
+          <RadioButton value="SHOW_ALL">All</RadioButton>
+          <RadioButton value="SHOW_COMPLETED">Completed</RadioButton>
+          <RadioButton value="SHOW_ACTIVE">Active</RadioButton>
+        </RadioGroup>
+      </div>
     )
   }
 }
