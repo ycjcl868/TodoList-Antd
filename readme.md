@@ -1,11 +1,11 @@
 # TodoList
-A events use `Ant-Design` + `React` + `Redux`
+The todolist use [Ant-Design](https://github.com/ant-design/ant-design) + `React` + `Redux`
 
-The demo is suitable for entry for `React` 、 `Redux` 、 `AntDesign` beginners. 
+The demo is suitable for entry for `React` 、 `Redux` 、 `Ant-Design` beginners. 
 
 This is the demonstration.
 
-[](http://7xi72v.com1.z0.glb.clouddn.com/17-5-24/78019071.jpg)
+![](http://7xi72v.com1.z0.glb.clouddn.com/17-5-24/78019071.jpg)
 
 # Install
 
