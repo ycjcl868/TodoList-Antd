@@ -1,4 +1,7 @@
 # TodoList
+
+[![Build Status](https://travis-ci.org/ycjcl868/TodoList-Antd.svg?branch=master)](https://travis-ci.org/ycjcl868/TodoList-Antd)
+
 The todolist use [Ant-Design](https://github.com/ant-design/ant-design) + `React` + `Redux`
 
 The demo is suitable for entry for `React` 、 `Redux` 、 `Ant-Design` beginners. 
