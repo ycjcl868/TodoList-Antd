@@ -8,7 +8,7 @@ The demo is suitable for entry for `React` 、 `Redux` 、 `Ant-Design` beginner
 
 This is the demonstration.
 
-![](http://7xi72v.com1.z0.glb.clouddn.com/17-5-24/78019071.jpg)
+![](http://7xi72v.com1.z0.glb.clouddn.com/17-5-30/37588064.jpg)
 
 # Install
 
