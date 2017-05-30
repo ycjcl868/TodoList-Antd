@@ -1,4 +1,4 @@
-import { Button, Input } from 'antd'
+import { Button, Input, message } from 'antd'
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 
@@ -29,8 +29,15 @@ export default class AddTodo extends Component {
   handleClick() {
     // console.log(this.state)
     const text = this.state.todoText.trim()
-    this.props.onAddClick(text)
-    this.setState({ todoText:'' })
+    if(text !== '') {
+      this.props.onAddClick(text)
+      message.success(`添加{${text}}事件成功`)
+      this.setState({ todoText:'' })
+    } else {
+      message.error('真没有什么事情要做 ? ~')
+      return
+    }
+
   }  
   render() {
     return (
