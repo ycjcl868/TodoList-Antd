@@ -15,7 +15,7 @@ This is the demonstration.
 clone the repo
 
 ```bash
-$ git clone https://github.com/ycjcl868/TodoList-Antd.git
+$ git clone https://github.com/ycjcl868/TodoList-Antd.git && cd TodoList-Antd
 ```
 
 Install the packages
